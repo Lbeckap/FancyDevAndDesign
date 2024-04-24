@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Lori's Porfolio</title>
+  </head>
+  <body class="font-nunito">
+    <!-- intro section -->
+    <div
+      class="h-[50vh] sm:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden"
+    >
+      <!-- navbar -->
+      <nav class="w-full fixed top-0 bg-white z-10">
+        <!-- container to keep everything centered -->
+        <div class="container mx-auto py-5 flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./img/logo.png" alt="logo" />
+            <span class="text-2xl font-bold text-indigo-900"
+              >Catchy WebSite Name</span
+            >
+          </div>
+          <ul
+            class="hidden md:flex space-x-2 text-gray-600 font-bold text-sm uppercase"
+          >
+            <li class="hover:text-gray-400">
+              <a href="#">homepage</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#">about me</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#">services</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#">works</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#">contact</a>
+            </li>
+          </ul>
+          <img
+            src="./img/moon.png"
+            class="hidden md:block w-5 cursor-pointer"
+            alt=""
+          />
+          <!-- hamburger menu -->
+          <div id="hamburger" class="md:hidden space-y-1 cursor-pointer z-20">
+            <div id="bar1" class="w-6 h-0.5 bg-black"></div>
+            <div id="bar2" class="w-6 h-0.5 bg-black"></div>
+            <div id="bar3" class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul
+            id="menu"
+            class="hidden bg-indigo-900 text-white font-bold text-sm uppercase absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-center"
+          >
+            <li class="hover:text-gray-400">
+              <a href="#">homepage</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#">about me</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#">services</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#">works</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- intro content -->
+      <!-- image -->
+      <img
+        class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
+        src="./img/man.png"
+        alt=""
+      />
+      <!-- cicle -->
+      <div
+        class="hidden lg:block absolute w-big h-big bg-indigo-900 rounded-full right-0 left-0 -bottom-1/4 mx-auto -z-10"
+      ></div>
+      <!-- animated text -->
+      <div
+        class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
+      >
+        <span class="text-gray-600">Web</span>
+        <p id="text" class="text-red-500"></p>
+      </div>
+      <!-- text -->
+      <div
+        class="hidden lg:flex flex-col gap-5 rounded-md shadow-xl absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3"
+      >
+        <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Lori</h1>
+        <p class="text-gray-500">
+          With x number of years in website development. Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Alias reiciendis et, distinctio
+          inventore delectus vero?
+        </p>
+        <a
+          href="#contact"
+          class="bg-indigo-600 text-white text-xl px-3 py-2 w-fit rounded-md font-semibold"
+          >Hire Me</a
+        >
+      </div>
+    </div>
+    <!-- about section -->
+    <div class="px-10">
+      <div
+        class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20"
+      >
+        <!-- left side -->
+        <div class="relative">
+          <img
+            class="h-1/4 absolute top-0 left-0 -z-10"
+            src="./img/dots.png"
+            alt=""
+          />
+          <img
+            class="rounded-full overflow-hidden"
+            src="./img/portrait.png"
+            alt=""
+          />
+        </div>
+        <!-- right side -->
+        <div class="my-auto flex flex-col gap-3">
+          <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
+          <h1 class="text-3xl font-medium">Better Design</h1>
+          <h1 class="text-3xl font-medium">Better Experience</h1>
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quis
+            aperiam excepturi asperiores praesentium beatae.
+          </p>
+          <h2 class="text-gray-500 font-medium">HTML</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-500 font-medium">CSS</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-500 font-medium">JavaScript</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <!-- <h2 class="text-gray-500 font-medium">React</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-3/6 bg-indigo-600 h-1.5 rounded-md"></div>
+                </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- services section -->
+    <div>
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold">SERVICES</h1>
+          <h2 class="text-3xl">What do I offer?</h2>
+          <p class="w-1/2 text-center text-gray-500">
+            My approach to web design is to.. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eligendi vitae similique quas placeat
+            libero.
+          </p>
+        </div>
+        <!-- bottom -->
+        <div class="p-5 sm:p-0 flex flex-wrap">
+          <!-- cards -->
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 mb-3"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg">UX / UI Design</h1>
+            <p class="text-gray-500">
+              I specialize in creating interactive websites for individuals and
+              small businesses
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href=""
+              >Read More</a
+            >
+          </div>
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 mb-3"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg">UX / UI Design</h1>
+            <p class="text-gray-500">
+              I specialize in creating interactive websites for individuals and
+              small businesses
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href=""
+              >Read More</a
+            >
+          </div>
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 mb-3"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg">UX / UI Design</h1>
+            <p class="text-gray-500">
+              I specialize in creating interactive websites for individuals and
+              small businesses
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href=""
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <!-- portfolio section -->
+    <div>
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold">PORTFOLIO</h1>
+          <h2 class="text-3xl">Works & Projects</h2>
+          <p class="w-1/2 text-center text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+            vitae similique quas placeat libero.
+          </p>
+        </div>
+        <!-- bottom -->
+        <div class="m-5 sm:p-0 flex flex-wrap justify-between">
+          <!-- cards -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 grayscale opacity-20"
+          >
+            <img src="./img/comingSoon.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 grayscale opacity-20"
+          >
+            <img src="./img/comingSoon.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 grayscale opacity-20"
+          >
+            <img src="./img/comingSoon.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 grayscale opacity-20"
+          >
+            <img src="./img/comingSoon.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact section-->
+    <div>
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold">CONTACT</h1>
+          <h2 class="text-3xl">Have a Question?</h2>
+          <p class="w-1/2 text-center text-gray-500">
+            Have an idea? Let's dicuss.
+          </p>
+        </div>
+        <!-- bottom -->
+        <form class="mt-5 flex flex-col gap-5 items-center">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea cols="30" rows="10" placeholder="Message..."></textarea>
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./autotyping.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
